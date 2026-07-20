@@ -963,7 +963,272 @@ flex-direction:column;
     font-size:16px;
 }
 
+}/* ===========================
+   CONTACT HERO
+=========================== */
+
+.contact-hero{
+    height:70vh;
+    background:url("images/contact-banner.jpg") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
 }
+
+.contact-overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.60);
+}
+
+.contact-content{
+    position:relative;
+    text-align:center;
+    color:#fff;
+    width:80%;
+    max-width:800px;
+}
+
+.contact-content h1{
+    font-size:70px;
+    font-weight:300;
+    margin-bottom:20px;
+}
+
+.contact-content p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+/* ===========================
+   CONTACT SECTION
+=========================== */
+
+.contact-section{
+    width:90%;
+    max-width:1200px;
+    margin:100px auto;
+    display:grid;
+    grid-template-columns:1fr 1.3fr;
+    gap:50px;
+}
+
+.contact-info{
+    background:#111;
+    color:#fff;
+    padding:50px;
+    border-radius:20px;
+}
+
+.contact-info h2{
+    font-size:35px;
+    margin-bottom:30px;
+}
+
+.contact-info p{
+    line-height:2;
+    margin-bottom:25px;
+    color:#ddd;
+}
+
+/* ===========================
+   CONTACT FORM
+=========================== */
+
+.contact-form{
+    background:#fff;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.contact-form h2{
+    font-size:35px;
+    margin-bottom:30px;
+    color:#222;
+}
+
+.contact-form form{
+    display:flex;
+    flex-direction:column;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:18px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#c7a16a;
+}
+
+.contact-form textarea{
+    resize:none;
+}
+
+.contact-form button{
+    background:#c7a16a;
+    color:#fff;
+    border:none;
+    padding:16px;
+    font-size:18px;
+    border-radius:40px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact-form button:hover{
+    background:#111;
+}
+
+/* ===========================
+   SOCIAL SECTION
+=========================== */
+
+.social-section{
+    text-align:center;
+    padding:90px 20px;
+    background:#f8f8f8;
+}
+
+.social-section h2{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.social-links{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.social-links a{
+    text-decoration:none;
+    color:#222;
+    padding:15px 30px;
+    border:2px solid #c7a16a;
+    border-radius:40px;
+    transition:.3s;
+    font-weight:500;
+}
+
+.social-links a:hover{
+    background:#c7a16a;
+    color:#fff;
+}
+
+/* ===========================
+   CALL TO ACTION
+=========================== */
+
+.contact-cta{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.contact-cta h2{
+    font-size:46px;
+    margin-bottom:20px;
+}
+
+.contact-cta p{
+    max-width:700px;
+    margin:0 auto 35px;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.contact-cta a{
+    display:inline-block;
+    text-decoration:none;
+    background:#c7a16a;
+    color:#fff;
+    padding:15px 40px;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.contact-cta a:hover{
+    background:#fff;
+    color:#222;
+}
+
+/* ===========================
+   ACTIVE NAVIGATION
+=========================== */
+
+.active{
+    color:#c7a16a;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.contact-content h1{
+    font-size:55px;
+}
+
+.contact-section{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.contact-content h1{
+    font-size:40px;
+}
+
+.contact-content p{
+    font-size:17px;
+}
+
+.contact-form,
+.contact-info{
+    padding:30px;
+}
+
+.contact-form h2,
+.contact-info h2,
+.social-section h2,
+.contact-cta h2{
+    font-size:30px;
+}
+
+.social-links{
+    flex-direction:column;
+    align-items:center;
+}
+
+.social-links a{
+    width:220px;
+}
+
+.contact-cta p{
+    font-size:16px;
+}
+
+}
+
+
+
 
 
 
